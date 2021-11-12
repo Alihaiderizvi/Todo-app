@@ -30,10 +30,15 @@ import Tasks from './components/Tasks';
         setTasks( tasks.filter ( task =>   task.id !== id))
     }
 
+    // Toggle Task 
+    const toggleReminder = id => {
+        setTasks(tasks.map(task => task.id === id ? {...task ,reminder: !task.reminder} : task))
+    }
+
      return (   
          <div className="container">
              <Header /> 
-             {tasks.length>0 ? <Tasks tasks={tasks} onDelete={deleteTask}/> : <h3>No Task to show!</h3>}
+             {tasks.length>0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}/> : <h3>No Task to show!</h3>}
          </div>
      );
  }
