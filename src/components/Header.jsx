@@ -3,10 +3,13 @@ import Button from './Button'
 
 
 const Header = ({title}) => {
+
+    const onClick = _ => console.log('text')
+
     return (
         <header className="header"> 
             <h1 >{title}</h1>     
-            <Button color='green' text="Add"/>
+            <Button color='green' text="Add" onClick={onClick}/>
         </header>
     )
 }
@@ -16,7 +19,7 @@ Header.defaultProps = {
 }
 
 Header.prototype = {
-    title : String.isRequired,
+    title : PropTypes.String.isRequired,
 }
 
 // const headingStyle = {
