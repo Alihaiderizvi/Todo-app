@@ -19,7 +19,7 @@ Header.defaultProps = {
 }
 
 Header.prototype = {
-    title : PropTypes.String.isRequired,
+    title : PropTypes.String,
 }
 
 // const headingStyle = {
