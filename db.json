@@ -11,12 +11,6 @@
       "text": "Doctor App.",
       "day": "Feb 6th at 2:30p",
       "reminder": "false"
-    },
-    {
-      "id": 3,
-      "text": "Wash the clothes",
-      "day": "Feb 8th at 2:30p",
-      "reminder": "false"
     }
   ]
 }
